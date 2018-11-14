@@ -1,5 +1,7 @@
-package com.carson.order;
-
+/**
+  *@author Carson Graham
+  *Notes: seems redundent, but whatever
+  */
 public class ExtraChargeOrder extends Order {
     public ExtraChargeOrder(String customerName, int customerNumber, int quantity, double unitPrice) {
         super(customerName, customerNumber, quantity, unitPrice);

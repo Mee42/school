@@ -1,5 +1,7 @@
-package com.carson.Vehicle;
-
+/**
+  *@author Carson Graham
+  *Notes: none
+  */
 public class Vehicle {
     protected final String manufacturer;
     protected final int cylinders;

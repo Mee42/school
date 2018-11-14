@@ -2,8 +2,6 @@ import java.util.Scanner;
 /**
   *@author Carson Graham
   *Date: 2018-9-19
-  *
-  *
   *Note: Main is classname because of issues with javac
   */
 public class Main{

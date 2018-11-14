@@ -1,5 +1,7 @@
-package com.carson.pack;
-
+/**
+  *@author Carson Graham
+  *Notes: yay insurence
+  */
 public class InsuredPackage extends Package {
     public InsuredPackage(double ounces, Method shipping) {
         super(ounces, shipping);

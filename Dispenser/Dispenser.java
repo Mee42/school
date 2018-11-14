@@ -3,7 +3,10 @@ package com.carson;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
+/**
+  *@author Carson Graham
+  *Notes: fun with ?A:B's
+  */
 public class Dispenser {
     private static Scanner scan = new Scanner(System.in);
     public static void main(String[] args) {

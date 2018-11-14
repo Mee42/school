@@ -1,7 +1,9 @@
-package com.carson;
 
 import java.util.Scanner;
-
+/**
+  *@author Carson Graham
+  *Notes: yay first lab
+  */
 public class Rectangle {//class name should be a singular noun
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

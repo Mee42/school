@@ -1,5 +1,8 @@
-package com.carson.Vehicle;
-
+/**
+  *@author Carson Graham
+  *Notes: the feminist movement is saying we should stop objectifiying
+  *women
+  */
 public class  Person {
     private String name;
     private final int age;

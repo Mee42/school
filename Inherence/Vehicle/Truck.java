@@ -1,5 +1,7 @@
-package com.carson.Vehicle;
-
+/**
+  *@author Carson Graham
+  *Notes: none
+  */
 public class Truck extends Vehicle {
     private final double loadCapacity;
     private final int towingCapacity;

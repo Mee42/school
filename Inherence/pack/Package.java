@@ -1,5 +1,7 @@
-package com.carson.pack;
-
+/**
+  *@author Carson Graham
+  *Notes: Enums were used but not really nessesary
+  */
 public class Package {
     private final double ounces;
     public enum Method{

@@ -1,5 +1,8 @@
-package com.carson.order;
-
+/**
+  *@author Carson Graham
+  *Notes: There is so much boilerplate in Java, it makes me want to
+  *   switch to another language like kotlin. Maybe I should
+  */
 public class Order {
     private final String customerName;
     private final int customerNumber;

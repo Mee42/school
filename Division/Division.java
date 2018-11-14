@@ -1,7 +1,11 @@
 package com.carson;
 
 import java.util.Scanner;
-
+/**
+  *@author carson graham
+  *Notes: easy swaping. would be interesting to think of a solution that
+  *didn't need swaping
+  */
 public class Division {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

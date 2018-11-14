@@ -1,5 +1,3 @@
-package com.carson;
-
 import java.util.Scanner;
 
 /**

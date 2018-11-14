@@ -1,4 +1,3 @@
-package com.carson;
 
 /**
  * @author Carson Graham

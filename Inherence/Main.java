@@ -1,12 +1,6 @@
-package com.carson;
-
-import com.carson.Vehicle.Person;
-import com.carson.Vehicle.Truck;
-import com.carson.Vehicle.Vehicle;
-import com.carson.order.*;
-import com.carson.pack.InsuredPackage;
-import com.carson.pack.Package;
-
+/**
+  *A testing driver class
+  */
 public class Main {
     public static void main(String[] args) {
         testOrder();
