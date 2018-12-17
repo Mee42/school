@@ -7,7 +7,10 @@ import javax.crypto.spec.*;
 /**
  * @author Carson Graham
  * Date: 2018-12-1
- * Notes can be found in BetterPassword.md
+ * Notes can be found in README.md
+ * Because notes are written in markdown, they need to be viewed with a
+ * markdown renderer or in browser at:
+https://github.com/mee42/school/blob/master/Extra/BetterPassword/READEME.md
  *
  */
 public class BetterPassword{
