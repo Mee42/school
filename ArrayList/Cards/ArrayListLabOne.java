@@ -1,5 +1,21 @@
 package systems.carson;
 
+/**
+ * @author Carson Graham
+ * Date: 2018-12-17
+ * Notes: I didn't end up using the given code because the large amount of final variables makes it hard to maintain and protect against missuse
+ * I instead used enums Suite and Number to store data on each. Suite has a unicode representation of the suite and the color,
+ * and Number has the numberiec value. This also allows for very easy looping,
+ * for(Number number : Number.values())
+ *     for(Suite suite : Suite.values())
+ *        new Card(number,suite);
+ *
+ * and I knew I could be sure I covered everything.
+ *
+ * I also used streams in some places because it looks a lot nicer and cleaner, and it probably(?) runs faster
+ *
+ *
+ */
 public class ArrayListLabOne {
     public static void main(String[] args) {
         StandardDeck deck = new StandardDeck();

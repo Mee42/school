@@ -1,5 +1,14 @@
 package systems.carson;
 
+/**
+ * @author Carson Graham
+ * Date: 2018-12-17
+ * Notes: This was pretty much the same as the StandardDeck lab, except with less cards. A better lab would be something that let StandardDeck
+ * deal out cards to a new hand and other interations between the two
+ *
+ * Edit: turns out I only used streams in the lab. well, whatever.
+ *
+ */
 public class ArrayListLabTwo {
     public static void main(String[] args) {
         Hand hand = new Hand();
