@@ -15,6 +15,7 @@ class Board{
     return true;
   }
 
+
   public int winner(){
     int[] b = board;
     //rows
@@ -32,18 +33,35 @@ class Board{
   }
 
   public boolean hasAnyoneWon(){ return winner() != 0; }
+  
+  public boolean isFull(){
+    int[] b = board;
+    return b[0] != 0 &&
+        b[1] != 0 &&
+        b[2] != 0 &&
+        b[3] != 0 &&
+        b[4] != 0 &&
+        b[5] != 0 &&
+        b[6] != 0 &&
+        b[7] != 0 &&
+        b[8] != 0;   
+  }
 
-  public int getTurn() { return turn; }
 
+  public String getTurn() { return s(turn); }
+
+
+  public String s(int i){return (i == 1) ? "X" : (i == 0) ? " " : "O"; } 
+  
   @Override
   public String toString(){
     int[] b = board;
     return "" +
-        b[0] + " | " + b[1] + " | " + b[2] + "\n" +
+        s(b[0]) + " | " + s(b[1]) + " | " + s(b[2]) + "\n" +
         "----------\n" +
-        b[3] + " | " + b[4] + " | " + b[5] + "\n" +
+        s(b[3]) + " | " + s(b[4]) + " | " + s(b[5]) + "\n" +
         "----------\n" +
-        b[6] + " | " + b[7] + " | " + b[8];
+        s(b[6]) + " | " + s(b[7]) + " | " + s(b[8]);
   }
 
 }
