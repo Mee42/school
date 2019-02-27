@@ -1,5 +1,14 @@
 import java.util.Scanner;
-
+/**
+*Author: Carson Graham
+*
+*Notes: The class Board was designed to be able to used in multiple situations, 
+* extrapolating the tic-tac-toe logic out and
+* Allowing it to be used across platforms and implementations
+* 
+* I also have input handling, which makes sure that users don't
+* put in invalid inputs
+*/
 class Main{
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
