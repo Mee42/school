@@ -14,15 +14,15 @@ class Main{
         Scanner scan = new Scanner(System.in);
         Board board = new Board();
 	while(!board.hasAnyoneWon() && !board.isFull()){
-            System.out.println(board.getTurn() + "'s turn");
+            System.out.println(board.getTurn() + "'s turn");//the board controls what turn it is
             System.out.println(board);
             int position = getPosition(scan);
-            boolean result = board.place(position);
+            boolean result = board.place(position);//place returns false if we are unable to place there
             if(!result)System.err.println("Unable to move there.");
 
 	}
         if(board.winner() != 0 )
-            System.out.println(board.s(board.winner()) + " Won!");
+            System.out.println(board.s(board.winner()) + " Won!");//board#s(int) replaces the integer with the right character: X or O
         else
             System.out.println("Tie");
         System.out.println(board);
@@ -37,8 +37,81 @@ class Main{
         try{
           int i = Integer.parseInt(out);
           if(i < 0 || i > 8)continue;
-          return i;
+          return i;//only return if it parses and falls within the bounds
         }catch(NumberFormatException e){}
       }
     }
 }
+/*
+Outputs:
+
+X's turn
+  |   |  
+----------
+  |   |  
+----------
+  |   |  
+Enter position:0
+O's turn
+X |   |  
+----------
+  |   |  
+----------
+  |   |  
+Enter position:4
+X's turn
+X |   |  
+----------
+  | O |  
+----------
+  |   |  
+Enter position:5
+O's turn
+X |   |  
+----------
+  | O | X
+----------
+  |   |  
+Enter position:7
+X's turn
+X |   |  
+----------
+  | O | X
+----------
+  | O |  
+Enter position:1
+O's turn
+X | X |  
+----------
+  | O | X
+----------
+  | O |  
+Enter position:9
+Error
+Enter position:10
+Error
+Enter position:Hello
+Error
+Enter position:8
+X's turn
+X | X |  
+----------
+  | O | X
+----------
+  | O | O
+Enter position:3
+O's turn
+X | X |  
+----------
+X | O | X
+----------
+  | O | O
+Enter position:6
+O Won!
+X | X |  
+----------
+X | O | X
+----------
+O | O | O
+
+*/
