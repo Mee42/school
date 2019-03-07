@@ -1,5 +1,18 @@
 import java.util.Scanner;
+/**
 
+Name: Carson Graham
+Notes:
+
+I'm used to the Pair<A,B> class in the bast, which is not avalibile in the standard java libraries, but is
+in many libraries I use. So, I re-wrote it. More information in the Pair.java file
+
+I use it to return two variables (x and y position) from the user input method.
+
+The entire user interface is handled by the the Main class and the entire processing is handled by the Board.java class
+
+
+*/
 class Main{
   public static void main(String[] args){
     Scanner scan = new Scanner(System.in);
