@@ -96,6 +96,7 @@ class Board{
   private String fix(int i){
     String str = "" + i;
     if(str.length() == 1)str = " " + str;
+    if(i == 0)return "  ";
     return str;
   }
 
