@@ -1,3 +1,15 @@
+/**
+  * 
+  * the squares[][] is used to store all the data generated on startup
+  * the shown[][] var is used for storing what the user has clicked
+  * 
+  * Methods like fix(), fixPresent(), toStringPresent(), toString() are for stringafying it
+  * Present methods don't show the hidden squares while normal toString() shows everything
+  * 
+  * BombFoundException is used to propagate the function stack and tell Main.java that the person clicked a bomb
+  * Again, this uses the Pair<A,B> class which I wrote
+  *
+  */
 import java.util.List;
 import java.util.ArrayList;
 
@@ -105,6 +117,7 @@ class Board{
     if(i == -1)return " B";
     return fix(i);
   }
+  
    public boolean complete(){
      int count = 0;
      for(int r = 0;r < shown.length;r++){
